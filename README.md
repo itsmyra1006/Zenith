@@ -6,6 +6,15 @@ You can view and test the live, deployed application here:
 
 `https://zenith-client-ruddy.vercel.app/`
 
+## ⭐ Important Note on Data Persistence
+
+This application's backend is deployed on Render's free tier, which uses an ephemeral filesystem. This means that the server's local file storage (the db.json file that acts as the database) will reset after a period of inactivity (approximately 15 minutes).
+
+What this means for the demo:
+
+- Any posts, comments, or likes you create on the live site will disappear after the server goes to sleep and wakes up again.
+- This is an expected behavior of the free hosting platform and not a bug in the application's code.
+
 ## 📸 Screenshots
 
 <img width="1889" height="881" alt="image" src="https://github.com/user-attachments/assets/d46a44ed-b84d-42df-95d5-0fc738313db9" />
@@ -39,8 +48,8 @@ To run this project locally, follow these steps:
 
 **1. Clone the Repository**
 ```bash
-git clone [https://github.com/itsmyra1006/NSCC_Submission.git](https://github.com/itsmyra1006/NSCC_Submission.git)
-cd NSCC_Submission/Task-1-Zenith-Blog-App
+git clone [https://github.com/itsmyra1006/Zenith.git](https://github.com/itsmyra1006/Zenith.git)
+cd Zenith
 ``` 
 
 **2. Backend Setup**
