@@ -4,7 +4,7 @@ Zenith is a feature-rich, full-stack blog platform built from the ground up with
 ## 🔴 Live Demo
 You can view and test the live, deployed application here:
 
-`https://zenith-client-ruddy.vercel.app/`
+[Zenith blog app](https://zenith-lilac.vercel.app/)
 
 ## ⭐ Important Note on Data Persistence
 
