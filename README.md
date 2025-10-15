@@ -17,9 +17,9 @@ What this means for the demo:
 
 ## 📸 Screenshots
 
-<img width="1889" height="881" alt="image" src="https://github.com/user-attachments/assets/d46a44ed-b84d-42df-95d5-0fc738313db9" />
-<img width="1888" height="884" alt="Screenshot 2025-09-15 004011" src="https://github.com/user-attachments/assets/0753ece4-e68a-40bc-bc49-f55ba29351d9" />
-<img width="1884" height="894" alt="image" src="https://github.com/user-attachments/assets/6dc404c9-7f93-4492-b045-c218c36821b4" />
+<img width="1892" height="868" alt="image" src="https://github.com/user-attachments/assets/bb22a7c1-7097-4ae7-9832-26c18faa5ad3" />
+<img width="1872" height="876" alt="image" src="https://github.com/user-attachments/assets/6228dfe7-5f28-4c34-855d-551d721e2044" />
+
 
 ## ✨ Features
 **Custom Google OAuth 2.0:** Secure user login and session management handled manually without Firebase/Supabase.
