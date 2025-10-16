@@ -1,20 +1,16 @@
 import db from '../config/db.js';
 import { v4 as uuidv4 } from 'uuid';
 
-// @desc    Get all posts
-// @route   GET /api/posts
 const getPosts = async (req, res) => {
     try {
         await db.read();
-        // Join author details and comment count with each post
         const postsWithDetails = db.data.posts.map(post => {
             const author = db.data.users.find(u => u._id === post.author);
-            // *** BUG FIX: Calculate comment count for each post ***
             const comments = db.data.comments.filter(c => c.post === post._id);
             return {
                 ...post,
                 author: author ? { _id: author._id, name: author.name, picture: author.picture } : null,
-                commentCount: comments.length // Add comment count directly
+                commentCount: comments.length 
             };
         });
         res.json(postsWithDetails.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)));
@@ -24,8 +20,6 @@ const getPosts = async (req, res) => {
     }
 };
 
-// @desc    Get a single post by ID
-// @route   GET /api/post/:postId
 const getPostById = async (req, res) => {
     try {
         await db.read();
@@ -54,8 +48,6 @@ const getPostById = async (req, res) => {
         res.status(500).json({ message: 'Server Error' });
     }
 };
-
-// ... rest of the file remains the same ...
 
 const createPost = async (req, res) => {
     try {
@@ -247,4 +239,3 @@ export {
     deleteComment,
     getDashboardData,
 };
-

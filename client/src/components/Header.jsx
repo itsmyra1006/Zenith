@@ -11,7 +11,6 @@ const Header = () => {
     const dropdownRef = useRef(null);
 
     const handleLogin = () => {
-        // *** BUG FIX: Use the full, absolute URL for the login redirect ***
         window.location.href = `${API_BASE_URL}/api/auth/google`;
     };
 

@@ -15,7 +15,6 @@ app.use(cors({
   credentials: true,
 }));
 
-// *** THIS IS THE FIX: Trust the proxy headers from Render ***
 app.set('trust proxy', 1);
 
 app.use(express.json());

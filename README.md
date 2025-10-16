@@ -68,7 +68,7 @@ npm run dev
 ```
 ```bash
 3. Frontend Setup
-# Navigate to the client directory (from the root of Task-1-Zenith-Blog-App)
+# Navigate to the client directory 
 cd client
 
 # Install dependencies
